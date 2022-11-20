@@ -17,3 +17,28 @@
         </main>
     </body>
 </html>
+
+<?php
+    if(isset($_POST['Submit'])){
+    $FirstName = "First name : ".$_POST['First name']."
+    ";
+    $LastName = "Last name : ".$_POST['Last name']."
+    ";
+    $Age = "Age : ".$_POST['Age']."
+    ";
+    $Email = "Email : ".$_POST['Email']."
+    ";
+    $Country = "Country : ".$_POST['Country']."
+    ";
+    $City = "City : ".$_POST['City']."
+    ";
+    $file=fopen("saved.txt", "a");
+    fwrite($file, $FirstName);
+    fwrite($file, $LastName);
+    fwrite($file, $Age);
+    fwrite($file, $Email);
+    fwrite($file, $Country);
+    fwrite($file, $City);
+    fclose($file);
+}
+?>
