@@ -20,16 +20,13 @@
 
 <?php
     if(isset($_POST['Submit'])){
-        extract($_REQUEST);
-
-
         $FirstName = "First name : ".$_POST['First name'];
         $LastName = "Last name : ".$_POST['Last name'];
         $Age = "Age : ".$_POST['Age'];
         $Email = "Email : ".$_POST['Email'];
         $Country = "Country : ".$_POST['Country'];
         $City = "City : ".$_POST['City'];
-        $fp = fopen("data.txt", "w");
+        $fp = new TextFile("data.txt");
 
         fwrite($fp, $FirstName);
         fwrite($fp, $LastName);
