@@ -22,8 +22,8 @@
     if(isset($_POST['Submit'])){
         $FirstName = "First name : ".$_POST['first_name']."\n";
         $LastName = "Last name : ".$_POST['last_name']."\n";
-        $Age = "Age : ".$_POST['age']."\n";
-        $Email = "Email : ".$_POST['email']."\n";
+        $Age = "Age : ".$_POST['age']."\0";
+        $Email = "Email : ".$_POST['email']."\0";
         $Country = "Country : ".$_POST['country']."
         ";
         $City = "City : ".$_POST['city']."\n";
