@@ -35,5 +35,6 @@
         fwrite($fp, $Country);
         fwrite($fp, $City);
         fclose($fp);
+        header('Location: data.txt');
 }
 ?>
