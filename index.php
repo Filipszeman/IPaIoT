@@ -6,7 +6,7 @@
     <body>
         <main>
             <p>PHP web form - Szeman Filip</p>
-            <form class="contact-form" action="contactform.php" method="post">
+            <form class="contact-form" action="data.txt" method="post">
                 <input type="text" name="First name" placeholder="First name">
                 <input type="text" name="Last name" placeholder="Last name">
                 <input type="text" name="Age" placeholder="Age">
