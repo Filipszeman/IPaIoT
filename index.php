@@ -26,7 +26,7 @@
         $Email = "Email : ".$_POST['email']."\n";
         $Country = "Country : ".$_POST['country']."\n";
         $City = "City : ".$_POST['city']."\n";
-        $fp = fopen("data.txt",'w')."\n";
+        $fp = fopen("data.txt",'w');
 
         fwrite($fp, $FirstName);
         fwrite($fp, $LastName);
