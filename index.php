@@ -36,7 +36,5 @@
         fwrite($fp, $City);
         fclose($fp);
 
-        echo file_get_contents("data.txt");
-
 }
 ?>
