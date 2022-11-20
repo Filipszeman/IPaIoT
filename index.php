@@ -6,13 +6,13 @@
     <body>
         <main>
             <p>PHP web form - Szeman Filip</p>
-            <form class="contact-form" action="data.txt" method="post">
-                <input type="text" name="First name" placeholder="First name">
-                <input type="text" name="Last name" placeholder="Last name">
-                <input type="text" name="Age" placeholder="Age">
-                <input type="text" name="Email" placeholder="Email">
-                <input type="text" name="Country" placeholder="Country">
-                <input type="text" name="City" placeholder="City">
+            <form class="contact-form" method="post">
+                <input type="text" name="first_name" placeholder="First name">
+                <input type="text" name="last_name" placeholder="Last name">
+                <input type="text" name="age" placeholder="Age">
+                <input type="text" name="email" placeholder="Email">
+                <input type="text" name="country" placeholder="Country">
+                <input type="text" name="city" placeholder="City">
                 <button type="Submit" name="Submit">Submit form</button>
         </main>
     </body>
@@ -20,13 +20,13 @@
 
 <?php
     if(isset($_POST['Submit'])){
-        $FirstName = "First name : ".$_POST['First name'];
-        $LastName = "Last name : ".$_POST['Last name'];
-        $Age = "Age : ".$_POST['Age'];
-        $Email = "Email : ".$_POST['Email'];
-        $Country = "Country : ".$_POST['Country'];
-        $City = "City : ".$_POST['City'];
-        $fp = new TextFile("data.txt");
+        $FirstName = "First name : ".$_POST['first_name']."\n";
+        $LastName = "Last name : ".$_POST['last_name']."\n";
+        $Age = "Age : ".$_POST['age']."\n";
+        $Email = "Email : ".$_POST['email']."\n";
+        $Country = "Country : ".$_POST['country']."\n";
+        $City = "City : ".$_POST['city']."\n";
+        $fp = fopen("data.txt",'w')."\n";
 
         fwrite($fp, $FirstName);
         fwrite($fp, $LastName);
