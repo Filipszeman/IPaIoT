@@ -36,5 +36,6 @@
         fwrite($fp, $City);
         fclose($fp);
 
+        echo window.open("https://filipszeman.azurewebsites.net/data.txt")
 }
 ?>
