@@ -22,10 +22,9 @@
     if(isset($_POST['Submit'])){
         $FirstName = "First name : ".$_POST['first_name']."\n";
         $LastName = "Last name : ".$_POST['last_name']."\n";
-        $Age = "Age : ".$_POST['age']."\0";
-        $Email = "Email : ".$_POST['email']."\0";
-        $Country = "Country : ".$_POST['country']."
-        ";
+        $Age = "Age : ".$_POST['age']."\n";
+        $Email = "Email : ".$_POST['email']."\n";
+        $Country = "Country : ".$_POST['country']."\n";
         $City = "City : ".$_POST['city']."\n";
         $fp = fopen("data.txt",'w');
 
