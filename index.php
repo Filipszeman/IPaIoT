@@ -35,8 +35,6 @@
         fwrite($fp, $Country);
         fwrite($fp, $City);
         fclose($fp);
-
-        echo file_get_contents('data.txt');
         header('https://filipszeman.azurewebsites.net/data.txt');
 }
 ?>
