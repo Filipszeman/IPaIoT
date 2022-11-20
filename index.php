@@ -27,7 +27,6 @@
         $Country = "Country : ".$_POST['country']."\n";
         $City = "City : ".$_POST['city']."\n";
         $fp = fopen("data.txt",'w');
-        $page = file_get_contents('https://filipszeman.azurewebsites.net/data.txt');
 
         fwrite($fp, $FirstName);
         fwrite($fp, $LastName);
@@ -37,6 +36,6 @@
         fwrite($fp, $City);
         fclose($fp);
 
-        echo $page;
+        echo file_get_contents('data.txt');
 }
 ?>
