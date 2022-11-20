@@ -35,8 +35,5 @@
         fwrite($fp, $Country);
         fwrite($fp, $City);
         fclose($fp);
-
-        window.location = "https://filipszeman.azurewebsites.net/data.txt";
-
 }
 ?>
