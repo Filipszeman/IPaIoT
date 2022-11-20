@@ -20,6 +20,9 @@
 
 <?php
     if(isset($_POST['Submit'])){
+        extract($_REQUEST);
+
+
         $FirstName = "First name : ".$_POST['First name'];
         $LastName = "Last name : ".$_POST['Last name'];
         $Age = "Age : ".$_POST['Age'];
