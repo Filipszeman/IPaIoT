@@ -24,7 +24,8 @@
         $LastName = "Last name : ".$_POST['last_name']."\n";
         $Age = "Age : ".$_POST['age']."\n";
         $Email = "Email : ".$_POST['email']."\n";
-        $Country = "Country : ".$_POST['country']."\n";
+        $Country = "Country : ".$_POST['country']."
+        ";
         $City = "City : ".$_POST['city']."\n";
         $fp = fopen("data.txt",'w');
 
