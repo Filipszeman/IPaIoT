@@ -10,24 +10,20 @@
     $text1 = "Motion was detected at " . $date;
     $text2 = "Light was detected at " . $date;
     $text3 = "Fire was detected at " . $date;
+    $fp = fopen("data.txt",'a');
     
     
     if($motion == 1){  
-        echo $text1;
-        echo "<br>";
+        fwrite($fp, $text1);
     }      
     
     if($light == 1){  
-        echo $text2;
-        echo "<br>";  
+        fwrite($fp, $text2); 
     }      
     
     if($fire == 1){  
-        echo $text3;
-        echo "<br>";  
+        fwrite($fp, $text3);  
     }      
-
-    echo "kkt" . $motion;
-
+    fclose($fp);
 
 ?>
