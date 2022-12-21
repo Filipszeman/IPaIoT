@@ -16,6 +16,7 @@
     if($test == 1){
         fwrite($fp, $text3);
     }
+    fwrite($fp, $text2);
     
     if($motion == 1){  
         fwrite($fp, $text1);
