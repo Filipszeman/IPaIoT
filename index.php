@@ -7,7 +7,7 @@
     date_default_timezone_set('Europe/Bratislava');
     $date = date('Y-m-d H:i:s');
 
-    $text1 = "Motion was detected at " . $date;
+    $text1 = "Motion was detected ataaa " . $date;
     $text2 = "Light was detected at " . $date;
     $text3 = "Fire was detected at " . $date;
     
