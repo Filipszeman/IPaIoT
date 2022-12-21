@@ -11,10 +11,10 @@
     $text1 = "Motion was detected ataa " . $date;
     $text2 = "Light was detected at " . $date;
     $text3 = "Fire was detected at " . $date;
-    $fp = fopen("data.txt",'w');
+    $fp = fopen("data.txt",'a');
     
     if($test == 1){
-        fwrite($fp, '<br>Motion was detected at ' . $date);
+        fwrite($fp, 'Motion was detected at ' . $date);
     }
     fwrite($fp, 'Fire was detected at ' . $date);
     
