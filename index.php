@@ -14,7 +14,7 @@
     $fp = fopen("data.txt",'a');
     
     if($test == 1){
-        fwrite($fp, 'Motion was detected at ' . $date);
+        fwrite($fp, 'Motion was detected at ' . $date . "\n");
     }
     fwrite($fp, 'Fire was detected at ' . $date);
     
