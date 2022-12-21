@@ -28,7 +28,8 @@
     }      
     echo $text1;
     echo "<br>";
-    echo $motion;
+
+    echo "kkt" . $motion;
 
 
 ?>
