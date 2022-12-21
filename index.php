@@ -26,8 +26,6 @@
         echo $text3;
         echo "<br>";  
     }      
-    echo $text1;
-    echo "<br>";
 
     echo "kkt" . $motion;
 
