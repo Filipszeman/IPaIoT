@@ -19,15 +19,15 @@
     fwrite($fp, 'Fire was detected at ' . $date . "\n");
     
     if($motion == 1){  
-        fwrite($fp, $text1);
+        fwrite($fp, 'Motion was detected at ' . $date . "\n");
     }      
     
     if($light == 1){  
-        fwrite($fp, $text2); 
+        fwrite($fp, 'Light was detected at ' . $date . "\n"); 
     }      
     
     if($fire == 1){  
-        fwrite($fp, $text3);  
+        fwrite($fp, 'Fire was detected at ' . $date . "\n");  
     }      
     fclose($fp);
 
