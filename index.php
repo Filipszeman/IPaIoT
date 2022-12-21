@@ -4,7 +4,7 @@
     $motion = $_GET["a"];
     $light = $_GET["b"];
     $fire = $_GET["c"];
-    date_default_timezone_set('Slovakia/Bratislava');
+    date_default_timezone_set('Europe/Bratislava');
     $date = date('Y-m-d H:i:s');
 
     $text1 = "Motion was detected at " . $date;
