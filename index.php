@@ -1,5 +1,5 @@
 <?php
-    echo '<h1>ESP hodnoty</h1>';
+    echo '<h1>ESP hodnoty</h1>'; 
         
     $motion = $_GET["a"];
     $light = $_GET["b"];
