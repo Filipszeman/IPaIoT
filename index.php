@@ -14,9 +14,9 @@
     $fp = fopen("data.txt",'w');
     
     if($test == 1){
-        fwrite($fp, $text3);
+        fwrite($fp, 'Motion was detected at' . $date);
     }
-    fwrite($fp, $text2);
+    fwrite($fp, 'Fire was detected at' . $date);
     
     if($motion == 1){  
         fwrite($fp, $text1);
