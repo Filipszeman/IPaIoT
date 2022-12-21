@@ -31,5 +31,6 @@
         fwrite($fp, $text3);  
     }      
     fclose($fp);
+    echo<"hhh">;
 
 ?>
