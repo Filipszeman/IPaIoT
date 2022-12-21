@@ -1,7 +1,6 @@
 <?php
     echo '<h1>ESP hodnoty</h1>';
         
-    $test = 1;
     $motion = $_GET["a"];
     $light = $_GET["b"];
     $fire = $_GET["c"];
@@ -12,11 +11,6 @@
     $text2 = "Light was detected at " . $date;
     $text3 = "Fire was detected at " . $date;
     $fp = fopen("data.txt",'a');
-    
-    if($test == 1){
-        fwrite($fp, 'Motion was detected at ' . $date . "\n");
-    }
-    fwrite($fp, 'Fire was detected at ' . $date . "\n");
     
     if($motion == 1){  
         fwrite($fp, 'Motion was detected at ' . $date . "\n");
