@@ -17,7 +17,7 @@
         fwrite($fp, 'Motion was detected at ' . $date);
     }
     fwrite($fp, 'Fire was detected at ' . $date);
-    echo<"light was detected" . $date>;
+    echo 'light was detected' . $date;
     
     if($motion == 1){  
         fwrite($fp, $text1);
