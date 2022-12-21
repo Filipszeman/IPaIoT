@@ -6,7 +6,7 @@
     $fire = $_GET["c"];
     $date = date('m/d/Y h:i:s a', time());
 
-    $text1 = "Motion was detected at " . $date;
+    $text1 = "Motion was detected atasdasd " . $date;
     $text2 = "Light was detected at " . $date;
     $text3 = "Fire was detected at " . $date;
     
