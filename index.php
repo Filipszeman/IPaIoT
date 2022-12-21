@@ -16,7 +16,7 @@
     if($test == 1){
         fwrite($fp, 'Motion was detected at ' . $date . "\n");
     }
-    fwrite($fp, 'Fire was detected at ' . $date);
+    fwrite($fp, 'Fire was detected at ' . $date . "\n");
     
     if($motion == 1){  
         fwrite($fp, $text1);
