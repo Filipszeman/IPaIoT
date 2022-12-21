@@ -20,6 +20,7 @@
     if($fire == 1){  
         fwrite($fp, 'Fire was detected at ' . $date . "\n");  
     }      
+    
     fclose($fp);
 
 ?>
