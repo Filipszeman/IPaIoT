@@ -4,11 +4,11 @@
     $motion = $_GET["a"];
     $light = $_GET["b"];
     $fire = $_GET["c"];
-    $timezone = date_default_timezone_get();
+    $date = date('m/d/Y h:i:s a', time());
 
-    $text1 = "Motion was detected at " . $timezone;
-    $text2 = "Light was detected at " . $timezone;
-    $text3 = "Fire was detected at " . $timezone;
+    $text1 = "Motion was detected at " . $date;
+    $text2 = "Light was detected at " . $date;
+    $text3 = "Fire was detected at " . $date;
     
     
     if($motion == 1){  
