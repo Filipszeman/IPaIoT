@@ -1,3 +1,4 @@
+<?php
 echo '<h1>The result</h1>';
         
         $first_number = $_GET["first_number"];
@@ -89,3 +90,4 @@ echo '<h1>The result</h1>';
     echo $text2;
     echo "<br>";
     echo "The result = " . $result;
+?>
