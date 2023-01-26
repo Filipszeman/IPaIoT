@@ -1,7 +1,7 @@
 <html>  
    <body>  
      
-      <form action = display() method = "post">  
+      <form action = display() method = "get">  
          First number: <input type = "number" name = "first_number" /> <br>  
          Second number: <input type = "number" name = "second_number" /> <br>  
          Third number: <input type = "number" name = "third_number" /> <br>
