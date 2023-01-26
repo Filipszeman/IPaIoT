@@ -4,7 +4,7 @@
     </head>
     <body>
         <main>
-            <form class="contact-form" method="get" accept-charset="UTF-8">
+            <form class="contact-form" method="post" accept-charset="UTF-8">
                 <input type="number" name="first_number" placeholder="First number">
                 <input type="number" name="second_number" placeholder="Second number">
                 <input type="number" name="third_number" placeholder="Third number">
@@ -16,11 +16,11 @@
 </html>
 
 <?php   
-    $first_number = $_GET["first_number"];
-    $second_number = $_GET["second_number"];
-    $third_number = $_GET["third_number"];
-    $first_operator = $_GET["first_operator"];
-    $second_operator = $_GET["second_operator"];
+    $first_number = $_POST["first_number"];
+    $second_number = $_POST["second_number"];
+    $third_number = $_POST["third_number"];
+    $first_operator = $_POST["first_operator"];
+    $second_operator = $_POST["second_operator"];
         
     $text1 = "First number = " . $first_number . " Second number = " . $second_number . " Third number = " . $third_number;
     $text2 = "As first operator you chose : " . $first_operator . " and as second operator you chose : " . $second_operator;
